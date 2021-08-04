@@ -60,5 +60,32 @@ namespace GenericsToFindMaximumTest
             float actualMax = FindMaximum<float>.FindMax(11.08f, 08.11f, 45.08f);
             Assert.AreEqual(45.08f, actualMax);
         }
+        /// <summary>
+        /// Test case : 3.1
+        /// </summary>
+        [Test]
+        public void GivenMaxStringFirstPosition_whenFindMaxNum_shouldReturnsMaxFirst()
+        {
+            string actualMax = FindMaximum.MaxString("Vivo", "Oppo", "Apple");
+            Assert.AreEqual("Vivo", actualMax);
+        }
+        /// <summary>
+        /// Test case : 3.2
+        /// </summary>
+        [Test]
+        public void GivenMaxStringSecondPosition_whenFindMaxNum_shouldReturnsMaxSecond()
+        {
+            string actualMax = FindMaximum.MaxString("Apple", "Vivo", "Oppo");
+            Assert.AreEqual("Vivo", actualMax);
+        }
+        /// <summary>
+        /// Test case : 3.3
+        /// </summary>
+        [Test]
+        public void GivenMaxStringThirdPosition_whenFindMaxNum_shouldReturnsMaxThird()
+        {
+            string actualMax = FindMaximum.MaxString("Apple", "Oppo", "Vivo");
+            Assert.AreEqual("Vivo", actualMax);
+        }
     }
 }

@@ -13,6 +13,8 @@ namespace GenericsToFindMaximum
             Console.WriteLine("Maximum value : " + floatValue);
             string stringValue = FindMaximum<string>.FindMax("Apple", "Vivo", "Oppo");
             Console.WriteLine("Maximum value : " + stringValue); 
+
+
             
         }
     }
