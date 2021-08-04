@@ -7,6 +7,8 @@ namespace GenericsToFindMaximum
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to find maximum by using Generics");
+            FindMaximum.MaxInteger(1108,4508,0811);
+            
         }
     }
 }
