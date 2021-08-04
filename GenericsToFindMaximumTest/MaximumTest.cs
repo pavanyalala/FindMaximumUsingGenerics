@@ -12,8 +12,8 @@ namespace GenericsToFindMaximumTest
         [Test]
         public void GivenMaxNumFirstPosition_whenFindMaxNum_shouldReturnsMaxFirst()
         {
-            int actualMax = FindMaximum.MaxInteger(4508, 1108, 0811);
-            Assert.AreEqual(4508, actualMax);
+            int actualValue = FindMaximum<int>.FindMax(4508, 1108, 0811);
+            Assert.AreEqual(4508, actualValue);
         }
         /// <summary>
         /// Test case : 1.2
@@ -21,7 +21,7 @@ namespace GenericsToFindMaximumTest
         [Test]
         public void GivenMaxNumSecondPosition_whenFindMaxNum_shouldReturnsMaxSecond()
         {
-            int actualMax = FindMaximum.MaxInteger(1108, 4508, 0811);
+            int actualMax = FindMaximum<int>.FindMax(1108, 4508, 0811);
             Assert.AreEqual(4508, actualMax);
         }
         /// <summary>
@@ -30,7 +30,7 @@ namespace GenericsToFindMaximumTest
         [Test]
         public void GivenMaxNumThirdPosition_whenFindMaxNum_shouldReturnsMaxThird()
         {
-            int actualMax = FindMaximum.MaxInteger(0811, 1108, 4508);
+            int actualMax = FindMaximum<int>.FindMax(0811, 1108, 4508);
             Assert.AreEqual(4508, actualMax);
         }
         /// <summary>
@@ -39,7 +39,7 @@ namespace GenericsToFindMaximumTest
         [Test]
         public void GivenMaxFloatFirstPosition_whenFindMaxNum_shouldReturnsMaxFirst()
         {
-            float actualMax = FindMaximum.MaxFloat(45.08f, 11.08f, 08.11f);
+            float actualMax = FindMaximum<float>.FindMax(45.08f, 11.08f, 08.11f);
             Assert.AreEqual(45.08f, actualMax);
         }
         /// <summary>
@@ -48,7 +48,7 @@ namespace GenericsToFindMaximumTest
         [Test]
         public void GivenMaxFloatSecondPosition_whenFindMaxNum_shouldReturnsMaxSecond()
         {
-            float actualMax = FindMaximum.MaxFloat(11.08f, 45.08f, 08.11f);
+            float actualMax = FindMaximum<float>.FindMax(11.08f, 45.08f, 08.11f);
             Assert.AreEqual(45.08f, actualMax);
         }
         /// <summary>
@@ -57,7 +57,7 @@ namespace GenericsToFindMaximumTest
         [Test]
         public void GivenMaxFloatThirdPosition_whenFindMaxNum_shouldReturnsMaxThird()
         {
-            float actualMax = FindMaximum.MaxFloat(08.11f, 11.08f, 45.08f);
+            float actualMax = FindMaximum<float>.FindMax(11.08f, 08.11f, 45.08f);
             Assert.AreEqual(45.08f, actualMax);
         }
     }
