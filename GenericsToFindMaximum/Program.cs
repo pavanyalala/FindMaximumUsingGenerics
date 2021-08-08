@@ -10,15 +10,17 @@ namespace GenericsToFindMaximum
             int[] intValues = { 1108, 4508, 0811, 1180 };
             FindMaximum<int> maxInt = new FindMaximum<int>(intValues);
             maxInt.MaxValue(intValues);
+            maxInt.PrintMax();
 
             float[] floatValues = {11.08f, 45.08f, 08.11f, 11.80f};
-            FindMaximum<float> findMaxFloat = new FindMaximum<float>(floatValues);
-            findMaxFloat.MaxValue(floatValues);
+            FindMaximum<float> maxFloat = new FindMaximum<float>(floatValues);
+            maxFloat.MaxValue(floatValues);
+            maxFloat.PrintMax();
 
             string[] stringValues = { "Oneplus", "Apple", "Vivo", "Oppo" };
-            FindMaximum<string> findMaxString = new FindMaximum<string>(stringValues);
-            findMaxString.MaxValue(stringValues);
-
+            FindMaximum<string> maxString = new FindMaximum<string>(stringValues);
+            maxString.MaxValue(stringValues);
+            maxString.PrintMax();
 
 
         }

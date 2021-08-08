@@ -35,7 +35,15 @@ namespace GenericsToFindMaximum
             var sorted_values = Sort(values);
             return sorted_values[^1];
         }
-       
+        /// <summary>
+        /// Maximum Method to Find Maximim Value
+        /// </summary>
+        public void PrintMax()
+        {
+            var print = MaxValue(this.value);
+            Console.WriteLine("Maximum Value is: " + print);
+        }
+
     }
 }
     
