@@ -7,15 +7,20 @@ namespace GenericsToFindMaximum
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to find maximum by using Generics");
-            int integerValue = FindMaximum<int>.FindMax(1108, 4508, 0811);
-            Console.WriteLine("Maximum value : " + integerValue);
-            float floatValue = FindMaximum<float>.FindMax(11.08f, 45.08f, 08.11f);
-            Console.WriteLine("Maximum value : " + floatValue);
-            string stringValue = FindMaximum<string>.FindMax("Apple", "Vivo", "Oppo");
-            Console.WriteLine("Maximum value : " + stringValue); 
+            int[] intValues = { 1108, 4508, 0811, 1180 };
+            FindMaximum<int> maxInt = new FindMaximum<int>(intValues);
+            maxInt.MaxValue(intValues);
+
+            float[] floatValues = {11.08f, 45.08f, 08.11f, 11.80f};
+            FindMaximum<float> findMaxFloat = new FindMaximum<float>(floatValues);
+            findMaxFloat.MaxValue(floatValues);
+
+            string[] stringValues = { "Oneplus", "Apple", "Vivo", "Oppo" };
+            FindMaximum<string> findMaxString = new FindMaximum<string>(stringValues);
+            findMaxString.MaxValue(stringValues);
 
 
-            
+
         }
     }
 }
